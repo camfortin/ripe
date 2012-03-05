@@ -1,11 +1,16 @@
 Ripe::Application.routes.draw do
   
-
-  root :to => "home#index"
-
+  match '/signup', :to => 'users#new'
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/blog',    :to => 'pages#blog'
+  match '/photos', :to => 'pages#photos'
+  
+  #root :to => "home#index" can't make this work even though its the right way...
+  root :to => 'pages#index'
+  
   devise_for :users
   resources :users, :only => :show
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
