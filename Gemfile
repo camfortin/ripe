@@ -1,3 +1,5 @@
+# FML WHY!
+
 require 'rbconfig'
 HOST_OS = RbConfig::CONFIG['host_os']
 source 'https://rubygems.org'
