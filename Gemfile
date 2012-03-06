@@ -5,8 +5,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-gem 'sqlite3'
 
+# Gems used only for assets and not required
+# in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -14,6 +15,15 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :production, :staging do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "splite3-ruby", require => "sqlite3"
+end
+
 gem "capybara", ">= 1.1.2", :group => :test
 gem "database_cleaner", ">= 0.7.1", :group => :test
 gem "launchy", ">= 2.0.5", :group => :test
