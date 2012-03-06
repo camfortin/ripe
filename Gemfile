@@ -16,7 +16,7 @@ end
 
 gem 'jquery-rails'
 
-gem "sqlite3-ruby", :group => :development
+gem "sqlite3-ruby"
 
 gem "capybara", ">= 1.1.2", :group => :test
 gem "database_cleaner", ">= 0.7.1", :group => :test
