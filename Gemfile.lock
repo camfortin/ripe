@@ -149,5 +149,5 @@ DEPENDENCIES
   launchy (>= 2.0.5)
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
-  sqlite3 (= 1.3.5)
+  sqlite3
   uglifier (>= 1.0.3)
