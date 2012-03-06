@@ -16,7 +16,6 @@ end
 
 gem 'jquery-rails'
 
-gem "pg", :group => :production
 gem "sqlite3-ruby", :group => :development
 
 gem "capybara", ">= 1.1.2", :group => :test
