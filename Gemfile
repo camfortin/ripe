@@ -16,13 +16,7 @@ end
 
 gem 'jquery-rails'
 
-group :production, :staging do
-  gem "pg"
-end
-
-group :development, :test do
-  gem "splite3-ruby", require => "sqlite3"
-end
+gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem "capybara", ">= 1.1.2", :group => :test
 gem "database_cleaner", ">= 0.7.1", :group => :test
