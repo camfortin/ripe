@@ -1,36 +1,23 @@
-<h1>cam's rails web app in progress</h1>
+<h1>Eat Local. Eat Ripe.</h1>
 
 <h2>users here:</h2>
 <% @users.each do |user| %>
   <p>User: <%=link_to user.name, user %></p>
 <% end %>
 
-<p>one day this app will display my photos and blog posts on things i learn while on the job at wine.com as a product manager and analytics ninja.<p>
-	
-	<a class="btn" href="">Link</a>
-	<button class="btn" type="submit">
-	  Button
-	</button>
-	<input class="btn" type="button"
-	         value="Input">
-	<input class="btn" type="submit"
-	         value="Submit">
-
-<dl class="tabs contained">
-  <dd><a href="#simpleContained1" class="active">ruby on rails</a></dd>
-  <dd><a href="#simpleContained2">look and feel</a></dd>
-  <dd><a href="#simpleContained3">me, elsewhere</a></dd>
-</dl>
-
-<ul class="tabs-content contained">
-  <li class="active" id="simpleContained1Tab">built with ruby on rails, learn more here: <a href="http://railscasts.com/">rails casts</a></li>
-  <li id="simpleContained2Tab">looks so sexy, thanks <a href= "http://foundation.zurb.com/docs/ui.php">foundation</li>
-  <li id="simpleContained3Tab"><a href="http://www.twitter.com/#!/camfortin">@camfortin</a> | <a href="http://www.camfortin.com">my tumblr</a></li>
-</ul>
-
-<div class="panel">
-	<h5>I WISH I WAS HIKING</h5>
-	<p>Or coding...</p>
-</div>
-
-<%= link_to "Join the Community", signup_path, :class => "signup_button round" %>
+<h3>Brought to you by:</h3>
+<br>
+	<div class="tabbable">
+	  <ul class="nav nav-tabs">
+	    <li class="active"><a href="#1" data-toggle="tab">Cam</a></li>
+	    <li><a href="#2" data-toggle="tab">Jeremiah</a></li>
+	  </ul>
+	  <div class="tab-content">
+	    <div class="tab-pane active" id="1">
+	      <a href="http://www.funjai.com">cam's tumblr</a>
+	    </div>
+	    <div class="tab-pane" id="2">
+	      <a href="http://jeremiahboyle.com/">jeremiah's tumblr</a>
+	    </div>
+	  </div>
+	</div>
